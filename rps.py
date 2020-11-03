@@ -94,6 +94,12 @@ def getUserInfo():
 	print(f"Alright! Let the game begin!")
 	runGame(name1,name2)
 
+def helpText():
+	print("--RULES--\n" + 
+		  "The rules are actually pretty simple. Rock beats paper, paper beats scissors, and scissors beats rock." +
+		  "If you match one of those conditions, a point will be rewarded to you. If not, you won't gain a point." + 
+		  "If you and the computer make the same choice, it is a tie. No point is rewarded either.")
+
 def runGame(name1,name2):
 	while True:
 		playerOne = Player1(name1)
